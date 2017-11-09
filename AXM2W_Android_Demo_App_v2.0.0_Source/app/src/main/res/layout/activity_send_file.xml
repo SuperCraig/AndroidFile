@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    tools:context="com.rtk.simpleconfig_wizard.MainActivity">
+    <TableRow>
+        <TextView
+            android:text="Name"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/showName"
+            android:hint="show name"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="IP"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/destIp"
+            android:hint="show IP"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Port"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/showPort"
+            android:hint="show port"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Baud Rate"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/showBaudrate"
+            android:hint="show Baud rate"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/fileChooser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:background="@color/grgray"
+        android:text="File Browser"
+        android:textSize="16dp"
+        android:onClick="chooseFile"
+        />
+
+    <TableRow>
+        <TextView
+            android:text="File Path"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/filePath"
+            android:hint="show file path"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="File Size"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <TextView
+            android:id="@+id/fileSize"
+            android:hint="show file size"
+            android:padding="5sp"
+            android:layout_margin="5sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/sendFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:text="Send File"
+        android:textSize="16dp"
+        android:onClick="tcpSendFile"
+        />
+</TableLayout>

@@ -1,0 +1,175 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:2:1-78:12
+	package
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:6:5-32
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:4:5-35
+uses-sdk
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:8:5-10:41
+	android:targetSdkVersion
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:10:9-38
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:9:9-34
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:14:5-76
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:14:22-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:16:5-76
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:16:22-73
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:17:5-67
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:17:22-64
+uses-permission#android.permission.READ_SMS
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:18:5-67
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:18:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:21:22-63
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:22:5-65
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:22:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:23:5-69
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:23:22-66
+uses-feature#android.hardware.camera
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:25:5-60
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:25:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:26:5-70
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:26:19-67
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:29:5-80
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:29:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:30:5-81
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:30:22-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:31:22-81
+android:uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:33:5-83
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:33:30-80
+application
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:35:5-76:19
+	android:label
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:38:9-41
+	android:allowBackup
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:36:9-35
+	android:icon
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:37:9-38
+	android:theme
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:39:9-40
+activity#com.rtk.simpleconfig_wizard.MainActivity
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:40:9-50:20
+	android:screenOrientation
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:44:13-49
+	android:label
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:43:13-45
+	android:configChanges
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:42:13-74
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:41:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:45:13-49:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:46:17-69
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:46:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:48:17-77
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:48:27-74
+activity#com.wifi.connection.MainActivity
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:51:9-65:20
+	android:excludeFromRecents
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:53:13-46
+	android:launchMode
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:54:13-48
+	android:noHistory
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:55:13-37
+	android:theme
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:56:13-56
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:52:13-60
+intent-filter#android.intent.category.INFO
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:57:13-59:29
+category#android.intent.category.INFO
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:58:17-73
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:58:27-70
+intent-filter#android.intent.category.DEFAULT+com.wifi.connection.CONNECT_OR_EDIT
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:60:13-64:29
+action#com.wifi.connection.CONNECT_OR_EDIT
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:61:17-78
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:61:25-75
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:63:17-76
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:63:27-73
+activity#com.zxing.activity.CaptureActivity
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:66:9-71:63
+	android:screenOrientation
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:69:13-49
+	android:windowSoftInputMode
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:71:13-60
+	android:configChanges
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:68:13-63
+	android:theme
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:70:13-71
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:67:13-62
+activity#com.rtk.simpleconfig_wizard.discoveryActivity
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:72:9-55
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:72:19-52
+activity#com.rtk.simpleconfig_wizard.DeviceListActivity
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:73:9-56
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:73:19-53
+activity#com.rtk.simpleconfig_wizard.SendFileActivity
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:74:9-63
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:74:19-51
+activity#com.rtk.simpleconfig_wizard.FileChooser
+ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:75:9-58
+	android:name
+		ADDED from C:\Users\Donald\AndroidStudioProjects\SimpleConfigWizard_v114_AXMR2W_G20160525\app\src\main\AndroidManifest.xml:75:19-46

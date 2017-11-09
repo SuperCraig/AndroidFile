@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wifiap_list.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\wifiap_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_tab.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\activity_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\file_view.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\file_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wifi_password_entry.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\wifi_password_entry.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\confirm_list.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\confirm_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_list.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\device_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\customtitlebar.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\customtitlebar.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_send_file.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\activity_send_file.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_discovery.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\activity_discovery.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\buttons_view_divider.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\buttons_view_divider.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\title_view.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\title_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\floating.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\floating.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\confirm_pincode_entry.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\confirm_pincode_entry.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_device_list.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\activity_device_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\qrcode_scanner.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\qrcode_scanner.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_rename.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\device_rename.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\base_content.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\base_content.xml"
+    },
+    {
+        "merged": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\build\\intermediates\\res\\merged\\debug\\layout\\add_network_content.xml",
+        "source": "C:\\Users\\Donald\\AndroidStudioProjects\\SimpleConfigWizard_v114_AXMR2W_G20160525\\app\\src\\main\\res\\layout\\add_network_content.xml"
+    }
+]

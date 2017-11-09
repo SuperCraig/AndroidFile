@@ -1,0 +1,12 @@
+=============================================================================
+ ASIX AXM2W Android Demo App
+ Revision History
+
+ This document describes the major changes, additions and bug fixes made to 
+ the app between released versions. 
+=============================================================================
+
+Version 2.0.0  Dated: 6th Jul 2016
+----------------------------------------
+1. Initial release.
+

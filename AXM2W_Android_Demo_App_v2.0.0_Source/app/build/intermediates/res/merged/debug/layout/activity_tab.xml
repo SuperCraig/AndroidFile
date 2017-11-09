@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabHost">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/sendfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="1"
+                        tools:context="com.rtk.simpleconfig_wizard.MainActivity">
+                        <Button
+                            android:id="@+id/btStartTcpConnection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20sp"
+                            android:layout_marginBottom="20sp"
+                            android:layout_marginLeft="50sp"
+                            android:layout_marginRight="50sp"
+                            android:text="Start TCP Connection"
+                            android:textSize="16dp"
+                            android:onClick="startTcpConnection"
+                            android:background="#ffffbb33"
+                            />
+
+                        <TableRow>
+                            <TextView
+                                android:text="Name"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/showName"
+                                android:hint="show name"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="IP"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/destIp"
+                                android:hint="show IP"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Port"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/showPort"
+                                android:hint="show port"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Baud Rate"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/showBaudrate"
+                                android:hint="show baud rate"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Device State"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/showDeviceState"
+                                android:hint="show device state"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+
+                        <Button
+                            android:id="@+id/fileChooser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50sp"
+                            android:layout_marginRight="50sp"
+                            android:background="@color/grgray"
+                            android:text="File Browser"
+                            android:textSize="16dp"
+                            android:onClick="chooseFile"
+                            />
+
+                        <TableRow>
+                            <TextView
+                                android:text="File Path"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/filePath"
+                                android:hint="show file path"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="File Size"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/fileSize"
+                                android:hint="show file size"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+
+                        <Button
+                            android:id="@+id/sendFile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50sp"
+                            android:layout_marginRight="50sp"
+                            android:text="Send File"
+                            android:textSize="16dp"
+                            android:onClick="tcpSendFile"
+                            />
+
+                        <TableRow>
+                            <TextView
+                                android:text="File Transfer"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/sendFileProgressText"
+                                android:hint="0/100"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content"
+                                />
+                        </TableRow>
+                        <ProgressBar
+                            android:id="@+id/showSendFileProgress"
+                            android:indeterminate="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_marginLeft="25sp"
+                            android:layout_marginRight="25sp"
+                            android:layout_marginBottom="20dip"
+                            />
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="1"
+                        tools:context="com.rtk.simpleconfig_wizard.MainActivity">
+                        <TableRow>
+                            <TextView
+                                android:text="Device Name"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/tvDeviceName"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Device IP Address"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/tvDeviceIpAddress"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="WiFi MAC Address (Hex)"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/tvWifiMacAddress"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="DHCP Client"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/tvDhcpStatus"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Protocol Type"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/tvProtocolType"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="Image File Name"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/tvImageFilename"
+                                android:hint="number of sewing"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/firmware"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="1"
+                        tools:context="com.rtk.simpleconfig_wizard.MainActivity">
+
+                        <TableRow>
+                            <TextView
+                                android:text="Current Version"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/showFwVer"
+                                android:hint="show firmware version"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+
+                        <Button
+                            android:id="@+id/selectFwFile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50sp"
+                            android:layout_marginRight="50sp"
+                            android:text="Select Firmware File"
+                            android:textSize="16dp"
+                            android:onClick="chooseFwFile"
+                            />
+
+                        <TableRow>
+                            <TextView
+                                android:text="File Path"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/showFwFilePath"
+                                android:hint="show file path"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:text="File Size"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/showFwFileSize"
+                                android:hint="show file size"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content" />
+                        </TableRow>
+
+                        <Button
+                            android:id="@+id/upgradeFw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50sp"
+                            android:layout_marginRight="50sp"
+                            android:text="Upgrade Firmware"
+                            android:textSize="16dp"
+                            android:onClick="TftpUpgradeFw"
+                            />
+
+                        <TableRow>
+                            <TextView
+                                android:text="File Transfer"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium" />
+                            <TextView
+                                android:id="@+id/upgradeFwProgressText"
+                                android:hint="0/100"
+                                android:padding="5sp"
+                                android:layout_margin="5sp"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:layout_width="wrap_content"
+                                />
+                        </TableRow>
+                        <ProgressBar
+                            android:id="@+id/showUpgradeFwProgress"
+                            android:indeterminate="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@android:style/Widget.ProgressBar.Horizontal"
+                            android:layout_marginLeft="25sp"
+                            android:layout_marginRight="25sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/upgradeFwWarning"
+                            android:padding="5sp"
+                            android:layout_margin="5sp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="wrap_content"
+                            android:textColor= "@color/red"
+                            />
+                    </TableLayout>
+                </LinearLayout>
+
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/deviceConfiguration"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="1"
+                            tools:context="com.rtk.simpleconfig_wizard.MainActivity">
+                            <TextView
+                                android:id="@+id/tvConfigTabTop"
+                                android:text="" />
+                            <Button
+                                android:id="@+id/btUpdateDeviceConfiguration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0sp"
+                                android:layout_marginBottom="10sp"
+                                android:layout_marginLeft="50sp"
+                                android:layout_marginRight="50sp"
+                                android:text="Update Device Configuration"
+                                android:textSize="16dp"
+                                android:onClick="updateDeviceConfiguration"
+                                android:background="#ffffbb33"
+                                />
+                            // Serial To Network Settings
+                            <TableRow>
+                                <TextView
+                                    android:text="Serial To Network Settings"
+                                    android:padding="5sp"
+                                    android:layout_marginTop="10sp"
+                                    android:layout_marginBottom="5sp"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_span="2"
+                                    android:background="#ff80cbc4" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Server/Client Mode"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spServerClientMode"
+                                    android:hint="server/client mode"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Server Listening Port"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etServerListeningPort"
+                                    android:hint="server listening port"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Client Dest. Hos IP/Name"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etClientDestinationHostIpName"
+                                    android:hint="client destination host ip/name"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Client Dest. Port"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etClientDestinationPort"
+                                    android:hint="client destination port"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            // Static IP Settings
+                            <TableRow>
+                                <TextView
+                                    android:text="Static IP Settings"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_span="2"
+                                    android:background="#ff80cbc4" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Static IP Address"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etStaticIpAddress"
+                                    android:hint="static ip address"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Static Default Gateway"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etStaticDefaultGateway"
+                                    android:hint="static default gateway"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Static Subnet Mask"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etStaticSubnetMask"
+                                    android:hint="static subnet mask"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Static DNS Server"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etStaticDnsServer"
+                                    android:hint="stop bits"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            // Serial Port Settings
+                            <TableRow>
+                                <TextView
+                                    android:text="Serial Port Settings"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_span="2"
+                                    android:background="#ff80cbc4" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Data Buad Rate"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spDataBuadRate"
+                                    android:hint="data baud rate"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Data Bits"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spDataBits"
+                                    android:hint="data bits"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Data Parity"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spDataParity"
+                                    android:hint="data parity"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Stop Bits"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spStopBits"
+                                    android:hint="stop bits"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Flow Control"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spFlowControl"
+                                    android:hint="flow control"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            // WiFi System Settings
+                            <TableRow>
+                                <TextView
+                                    android:text="WiFi System Settings"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_span="2"
+                                    android:background="#ff80cbc4" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Network Mode"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spWifiNetworkMode"
+                                    android:hint="wifi network modee"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="AP Channel"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spWifiApChannel"
+                                    android:hint="wifi ap channel"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="SSID"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etWifiSSID"
+                                    android:hint="wifi SSID"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Security Mode"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spWifiSecurityMode"
+                                    android:hint="wifi security mode"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+
+                            // WEP Encryption Key Settings
+                            <TableRow>
+                                <TextView
+                                    android:text="WEP Encryption Key Settings"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_span="2"
+                                    android:background="#ff80cbc4" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Key Length"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spWepKeyLength"
+                                    android:hint="wep key length"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Key Index Select"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <Spinner
+                                    android:id="@+id/spWepKeyIndexSelect"
+                                    android:hint="wep key index select"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Key Index 0"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etWepKeyIndex0"
+                                    android:hint="wep key index 0"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Key Index 1"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etWepKeyIndex1"
+                                    android:hint="wep key index 1"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Key Index 2"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etWepKeyIndex2"
+                                    android:hint="wep key index 2"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Key Index 3"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etWepKeyIndex3"
+                                    android:hint="wep key index 3"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+
+                            // AES/TKIP Encryption Key Settings
+                            <TableRow>
+                                <TextView
+                                    android:text="AES/TKIP Encryption Key Settings"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_span="2"
+                                    android:background="#ff80cbc4" />
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="AES/TKIP Passphrase"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etAesTkipPassphrase"
+                                    android:hint="aes/tkip passphrase"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/uart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                            xmlns:tools="http://schemas.android.com/tools"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="1"
+                            tools:context="com.rtk.simpleconfig_wizard.MainActivity">
+
+                            <Button
+                                android:id="@+id/btStartUartPortConnection"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20sp"
+                                android:layout_marginBottom="20sp"
+                                android:layout_marginLeft="50sp"
+                                android:layout_marginRight="50sp"
+                                android:text="Start UART Port Connection"
+                                android:textSize="16dp"
+                                android:onClick="startUartPortConnection"
+                                android:background="#ffffbb33"
+                                />
+                            <TableRow>
+                                <TextView
+                                    android:text="TX Data"
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <EditText
+                                    android:id="@+id/etUartTxData"
+                                    android:hint=""
+                                    android:padding="5sp"
+                                    android:layout_margin="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:layout_width="wrap_content" />
+                                <Button
+                                    android:id="@+id/btSendDataToUartPort"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:text="Send"
+                                    android:textSize="16dp"
+                                    android:onClick="sendDataToAxmDevUartPort"
+                                    android:background="#ff80cbc4"
+                                    />
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:text="RX Data"
+                                    android:padding="5sp"
+                                    android:layout_marginTop="20sp"
+                                    android:layout_marginBottom="5sp"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                                <TextView
+                                    android:id="@+id/tvUartRxData"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:hint=""
+                                    android:padding="5sp"
+                                    android:layout_marginTop="20sp"
+                                    android:layout_marginBottom="5sp"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:inputType="textMultiLine"
+                                    android:scrollbars="vertical"
+                                    android:typeface="monospace"
+                                    android:lines="12"
+                                    android:background="#ffe0e0e0"
+                                    />
+                                <Button
+                                    android:id="@+id/btClearUartRxData"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5sp"
+                                    android:layout_marginTop="20sp"
+                                    android:layout_marginBottom="5sp"
+                                    android:layout_marginLeft="5sp"
+                                    android:layout_marginRight="5sp"
+                                    android:text="Clear"
+                                    android:textSize="16dp"
+                                    android:onClick="clearUartRxData"
+                                    android:background="#ff80cbc4"
+                                    android:focusableInTouchMode="true"
+                                    />
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
